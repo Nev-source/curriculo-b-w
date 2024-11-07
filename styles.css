@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(224,240,224);
+    background-color: rgb(224,224,224);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ body {
     overflow: hidden;
     background: #fff;
     outline: 4px solid #1b1b1b;
-    outline-offset: -3px;
+    outline-offset: -2px;
 }
 
 .foto img {
