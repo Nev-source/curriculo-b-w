@@ -48,8 +48,8 @@ body {
     border-radius: 50%;
     overflow: hidden;
     background: #fff;
-    outline: 3px solid #1b1b1b;
-    outline-offset: -2px;
+    outline: 4px solid #1b1b1b;
+    outline-offset: -3px;
 }
 
 .foto img {
