@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(224,224,224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+}
+
+.conteiner {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.3);
+}
+
+.conteiner .esquerda {
+    position: relative;
+    background: #1b1b1b;
+    padding: 40px;
+}
+
+.perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.perfil .foto {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    outline: 2px solid #1b1b1b;
+    outline-offset: -1px;
+}
+
+.foto img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%:
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil h2 {
+    color: #ffffff;
+    padding-top: 10px;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil h2 span {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contato {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.contato .titulo-h3 {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contato ul {
+    position: relative;
+}
+
+.contato ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contato ul li .icone {
+    color: #b3b3b3;
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+}
+
+.contato ul li .texto{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.formacoes {
+    padding-bottom: 20px;
+}
+
+.formacoes .titulo-h3 {
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+.formacoes ul {
+    list-style-type: none;
+}
+
+.formacoes li {
+    margin-bottom: 15px;
+}
+
+.formacoes h5 {
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.formacoes h6 {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.formacoes h4 {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.idiomas .titulo-h3 {
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.idiomas ul {
+    list-style-type: none;
+}
+
+.idiomas .porcentual {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #555555;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.idiomas .porcentual .p75 {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background: #ddd;
+    width: 85%;
+}
+
+.idiomas .porcentual .p100 {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background: #ddd;
+    width: 100%;
+}
+
+.idiomas .porcentual .p40 {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background: #ddd;
+    width: 30%;
+}
+
+.idiomas .texto {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.conteiner .direita {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    color: rgb(52, 65, 56);
+}
+
+.perfil-direita {
+    padding-bottom: 20px;
+}
+
+.titulo-h1 {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1b1b1b;
+    letter-spacing: 1px;
+}
+
+.perfil-direita p {
+    margin-bottom: 20px;
+}
+
+.experiencia {
+    padding-bottom: 20px;
+}
+
+.experiencia .caixa {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.experiencia .caixa .empresa-ano {
+    min-width: 150px;
+}
+
+.experiencia .caixa .empresa-ano h5 {
+    font-weight: 300;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+.experiencia .caixa .texto-exp h6 {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #1b1b1b;
+}
+
+.habilidades {
+    margin-bottom: 40px;
+}
+
+.habilidades .caixa {
+    display: flex;
+    flex-direction: row;
+    margin: 22px 0;
+    align-items: center;
+}
+
+.habilidades .habilidade {
+    min-width: 130px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.habilidades .porcentual {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    display: block;
+}
+
+.habilidades .porcentual .p80 {
+    position: relative;
+    width: 90%;
+    height: 10px;
+    background: #1b1b1b;
+    display: block;
+}
+
+.habilidades .porcentual .p60 {
+    position: relative;
+    width: 70%;
+    height: 10px;
+    background: #1b1b1b;
+    display: block;
+}
+
+.habilidades .porcentual .p40 {
+    position: relative;
+    width: 60%;
+    height: 10px;
+    background: #1b1b1b;
+    display: block;
+}
+
+.habilidades .porcentual .p30 {
+    position: relative;
+    width: 30%;
+    height: 10px;
+    background: #1b1b1b;
+    display: block;
+}
+
+.interesses .icone-tabela {
+    position: relative;
+    color: #1b1b1b;
+    font-size: 20px;
+    padding-right: 4px;
+}
+
+.interesses .texto-tabela {
+    position: relative;
+    padding-right: 60px;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: #000000;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .interesses ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre .caixa {
+    flex-direction: column;
+  }
+
+  .sobre .caixa .ano_companhia {
+    margin-bottom: 10px;
+  }
+
+  .interesses ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .habilidades .caixa {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
